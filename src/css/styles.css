@@ -162,12 +162,14 @@ section {
   align-items: center;
 }
 
-.skills {
+.skills img {
   width: 100px;
   height: 100px;
-  background-color: #b0c4b1;
-
   margin-top: 2rem;
+}
+
+.skills {
+  text-align: center;
 }
 /*===GRID_SYSTEM===*/
 
