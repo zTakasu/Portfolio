@@ -18,6 +18,16 @@ section {
   height: 100vh;
 }
 
+h1 {
+  margin: 0;
+}
+
+footer {
+  height: 50px;
+  background-color: #4a5759;
+  color: #edf6f9;
+}
+
 /* 
 #edafb8
 #f7e1d7
@@ -144,11 +154,14 @@ section {
 /* ===SKILLS-SECTION===*/
 
 #skills-section {
-  background-color: #edf6f9;
+  background-color: #dedbd2;
 }
 
 #skills-section > h1 {
-  margin-top: 0;
+  text-align: center;
+  padding: 1rem;
+  font-size: 3rem;
+  color: #4a5759;
 }
 
 .flex-container {
@@ -174,15 +187,43 @@ section {
   padding-left: 1rem;
   padding-right: 1rem;
   border-radius: 10px;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
 }
 
 .grow {
   transition: all 0.2s ease-in-out;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
 }
 
 .grow:hover {
   transform: scale(1.1);
+}
+
+/* ===Projects Section=== */
+
+#project-Section {
+  background-color: #b0c4b1;
+}
+
+#project-Section > h1 {
+  text-align: center;
+  padding-top: 1rem;
+  font-size: 3rem;
+  color: #4a5759;
+}
+
+#projectsGrid {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  padding-top: 3rem;
+  gap: 3rem;
+}
+
+#projectsGrid > div {
+  background-color: #4a5759;
+  border-radius: 10px;
+  width: 400px;
+  height: 250px;
 }
 
 /*===GRID_SYSTEM===*/
