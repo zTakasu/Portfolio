@@ -84,6 +84,15 @@ footer {
   background-color: #f7e1d7;
 }
 
+.svgContainer{
+  display: inline-block;
+}
+
+svg{
+  width: auto;
+  height: 200px;
+}
+
 #about-container {
   margin-top: 3rem;
   padding-left: 3rem;
