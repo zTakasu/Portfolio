@@ -24,30 +24,37 @@ h1 {
 
 footer {
   height: 50px;
-  background-color: #4a5759;
+  background-color: #ccc1ff;
   color: #edf6f9;
 }
 
-/* 
-#edafb8
-#f7e1d7
-#dedbd2
-#b0c4b1
-#4a5759
-#edf6f9 
+.grow {
+  transition: all 0.2s ease-in-out;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.grow:hover {
+  transform: scale(1.1);
+}
+
+/* Colores
+#553C8B
+#9EA9F0
+#CCC1FF
+#FFEAFE
 */
 
 /* ===NAVIGATION-BAR=== */
 #header-nav {
   width: 100%;
   height: 50px;
-  background-color: #4a5759;
+  background-color: #ccc1ff;
   position: relative;
 }
 
 #header-nav h1 {
   margin: 0;
-  color: #edf6f9;
+  color: #553c8b;
   padding-top: 0.5rem;
   float: left;
 }
@@ -76,19 +83,19 @@ footer {
 #header-nav ul > li > a {
   margin-top: 0.5rem;
   display: inline-block;
-  color: #edf6f9;
+  color: #553c8b;
 }
 
 /* ===ABOUT-ME=== */
 #about-me-section {
-  background-color: #f7e1d7;
+  background-color: #553c8b;
 }
 
-.svgContainer{
+.svgContainer {
   display: inline-block;
 }
 
-svg{
+svg {
   width: auto;
   height: 200px;
 }
@@ -135,7 +142,7 @@ svg{
   margin-left: auto;
   margin-top: 5rem;
   margin-bottom: 2rem;
-  background-color: #edf6f9;
+  background-color: #ffeafe;
   border-radius: 4%;
   display: block;
 }
@@ -163,7 +170,7 @@ svg{
 /* ===SKILLS-SECTION===*/
 
 #skills-section {
-  background-color: #dedbd2;
+  background-color: #ccc1ff;
 }
 
 #skills-section > h1 {
@@ -192,25 +199,16 @@ svg{
 
 .skills {
   text-align: center;
-  background-color: #fefefe;
+  background-color: #ffeafe;
   padding-left: 1rem;
   padding-right: 1rem;
   border-radius: 10px;
 }
 
-.grow {
-  transition: all 0.2s ease-in-out;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
-}
-
-.grow:hover {
-  transform: scale(1.1);
-}
-
 /* ===Projects Section=== */
 
 #project-Section {
-  background-color: #b0c4b1;
+  background-color: #553c8b;
 }
 
 #project-Section > h1 {
@@ -229,7 +227,7 @@ svg{
 }
 
 #projectsGrid > div {
-  background-color: #4a5759;
+  background-color: #ffeafe;
   border-radius: 10px;
   width: 400px;
   height: 250px;
@@ -243,66 +241,11 @@ svg{
   margin-right: auto;
 }
 
-.row::after {
-  content: "";
-  clear: both;
-  display: block;
-}
-
-[class*="col-"] {
-  float: left;
-  min-height: 1px;
-  padding: 0.8rem;
-}
-
-.col-1 {
-  width: 16.666%;
-}
-.col-2 {
-  width: 33.333%;
-}
-.col-3 {
-  width: 50%;
-}
-.col-6 {
-  width: 100%;
-}
-.col-4 {
-  width: 66.666%;
-}
-
 @media (max-width: 1024px) {
-  .col-1 {
-    width: 33.333%;
-  }
 }
 
 @media (max-width: 768px) {
-  .col-1 {
-    width: 50%;
-  }
-  .col-2 {
-    width: 100%;
-  }
-  .col-3 {
-    width: 100%;
-  }
-  .col-4 {
-    width: 100%;
-  }
 }
 
 @media (max-width: 480px) {
-  .col-1 {
-    width: 100%;
-  }
-  .col-2 {
-    width: 100%;
-  }
-  .col-3 {
-    width: 100%;
-  }
-  .col-4 {
-    width: 100%;
-  }
 }
