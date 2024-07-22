@@ -16,6 +16,7 @@ body {
 
 section {
   height: 100vh;
+  position: relative;
 }
 
 h1 {
@@ -25,7 +26,8 @@ h1 {
 footer {
   height: 50px;
   background-color: #ccc1ff;
-  color: #edf6f9;
+  color: #553c8b;
+  font-weight: bold;
 }
 
 .grow {
@@ -89,15 +91,17 @@ footer {
 /* ===ABOUT-ME=== */
 #about-me-section {
   background-color: #553c8b;
+  display: flex;
 }
 
 .svgContainer {
   display: inline-block;
+  margin-left: 12rem;
 }
 
-svg {
+.svgContainer svg {
   width: auto;
-  height: 200px;
+  height: 650px;
 }
 
 #about-container {
@@ -107,6 +111,42 @@ svg {
 
 #about-container > h1 {
   font-size: 3rem;
+}
+
+#img-container {
+  width: 650px;
+  height: 430px;
+  padding: 2rem 0;
+  background-color: #ffeafe;
+  border-radius: 4%;
+  margin-left: 15rem;
+  margin-top: 10rem;
+}
+
+@media (max-width: 1403px) {
+  #img-container {
+    display: none;
+  }
+}
+
+#about-me-section img {
+  height: 250px;
+  width: auto;
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 4%;
+}
+
+#img-container > h1 {
+  padding-left: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+#img-container > p {
+  padding-left: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
 }
 
 #about-container > a:link {
@@ -134,37 +174,40 @@ svg {
   font-size: 1.3rem;
 }
 
-#img-container {
-  width: 300px;
-  height: 400px;
-  padding: 2rem 0;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 5rem;
-  margin-bottom: 2rem;
-  background-color: #ffeafe;
-  border-radius: 4%;
+.wave {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.wave svg {
+  width: 100%;
+  margin: 0;
+}
+
+.wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.wave svg {
+  position: relative;
   display: block;
+  width: calc(118% + 1.3px);
+  height: 200px;
 }
 
-#about-me-section img {
-  height: 250px;
-  width: auto;
-  display: flex;
-  margin-right: auto;
-  margin-left: auto;
-  border-radius: 4%;
+.wave .waveLight {
+  fill: #ccc1ff;
 }
 
-#img-container > h1 {
-  padding-left: 1rem;
-  margin-bottom: 0.5rem;
-}
-
-#img-container > p {
-  padding-left: 1.5rem;
-  margin-top: 0;
-  margin-bottom: 0.5rem;
+.wave .waveDark {
+  fill: #553c8b;
 }
 
 /* ===SKILLS-SECTION===*/
