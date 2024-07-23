@@ -88,6 +88,12 @@ footer {
   color: #553c8b;
 }
 
+@media (max-width: 423px) {
+  #header-nav ul {
+    display: none;
+  }
+}
+
 /* ===ABOUT-ME=== */
 #about-me-section {
   background-color: #553c8b;
@@ -123,11 +129,11 @@ footer {
   margin-top: 10rem;
 }
 
-@media (max-width: 1403px) {
+/* @media (max-width: 1403px) {
   #img-container {
     display: none;
   }
-}
+} */
 
 #about-me-section img {
   height: 250px;
@@ -223,9 +229,9 @@ footer {
   color: #553c8b;
 }
 
-.flex-container {
-  display: flex;
-  flex-wrap: wrap;
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
   gap: 4rem;
   width: 80%;
   margin-left: auto;
@@ -274,21 +280,4 @@ footer {
   border-radius: 10px;
   width: 400px;
   height: 250px;
-}
-
-/*===GRID_SYSTEM===*/
-
-.container {
-  width: 95%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-@media (max-width: 1024px) {
-}
-
-@media (max-width: 768px) {
-}
-
-@media (max-width: 480px) {
 }
