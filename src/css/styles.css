@@ -282,11 +282,13 @@ footer {
 
 .front {
   background-color: #ffeafe;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
 }
 
 .back {
-  background-color: #9ea9f0;
+  background-color: #ffeafe;
   transform: rotateY(180deg);
+  box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.1);
 }
 
 /* ===Projects Section=== */
