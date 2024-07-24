@@ -103,12 +103,14 @@ footer {
 
 .svgContainer {
   display: inline-block;
-  margin-left: 12rem;
+  margin-left: 10rem;
+  width: 50%;
+  height: 600px;
 }
 
 .svgContainer svg {
-  width: auto;
-  height: 650px;
+  width: 100%;
+  height: 600px;
 }
 
 #about-container {
@@ -126,8 +128,47 @@ footer {
   padding: 2rem 0;
   background-color: #ffeafe;
   border-radius: 4%;
-  margin-left: 15rem;
+
   margin-top: 10rem;
+}
+@media (max-width: 1133px) {
+  .svgContainer {
+    display: none;
+  }
+
+  #lightSwitch {
+    display: none;
+  }
+
+  #img-container {
+    margin: 0;
+  }
+
+  #about-me-section {
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 720px) {
+  #img-container {
+    width: 550px;
+    height: 330px;
+  }
+}
+
+@media (max-width: 590px) {
+  #img-container {
+    width: 500px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 530px) {
+  #img-container {
+    width: 260px;
+    height: 450px;
+  }
 }
 
 /* @media (max-width: 1403px) {
@@ -241,6 +282,37 @@ footer {
   align-items: center;
 }
 
+@media (max-width: 1080px) {
+  .grid-container {
+    grid-template-columns: auto auto auto auto;
+  }
+  #skills-section {
+    height: 135vh;
+  }
+}
+
+@media (max-width: 860px) {
+  .grid-container {
+    grid-template-columns: auto auto auto;
+  }
+}
+
+@media (max-width: 624px) {
+  .grid-container {
+    grid-template-columns: auto auto;
+  }
+
+  #skills-section {
+    height: 200vh;
+  }
+}
+
+@media (max-width: 400px) {
+  .grid-container {
+    grid-template-columns: auto;
+  }
+}
+
 .skills img {
   width: 100px;
   height: auto;
@@ -310,6 +382,15 @@ footer {
   justify-content: center;
   padding-top: 3rem;
   gap: 3rem;
+}
+@media (max-width: 860px) {
+  #projectsGrid {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+  }
+  #projectsGrid > div:not(:nth-child(-n + 2)) {
+    display: none;
+  }
 }
 
 #projectsGrid > div {
