@@ -103,7 +103,6 @@ footer {
 
 .svgContainer {
   display: inline-block;
-  margin-left: 10rem;
   width: 50%;
   height: 600px;
 }
@@ -128,6 +127,7 @@ footer {
   padding: 2rem 0;
   background-color: #ffeafe;
   border-radius: 4%;
+  margin-right: 2rem;
 
   margin-top: 10rem;
 }
