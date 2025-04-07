@@ -29,7 +29,14 @@ footer {
   background-color: #ccc1ff;
   color: #553c8b;
   font-weight: bold;
+  font-size: 20px;
+  padding-top: 15px;
+  padding-left: 15px;
 }
+
+/* footer{
+
+} */
 
 .grow {
   transition: all 0.2s ease-in-out;
@@ -58,8 +65,16 @@ footer {
 #header-nav h1 {
   margin: 0;
   color: #553c8b;
-  padding-top: 0.5rem;
+  padding-top: 0.7rem;
   float: left;
+  font-weight: bold;
+}
+
+#header-nav img {
+  height: 50px;
+  width: auto;
+  float: left;
+  scale: 1.2;
 }
 
 #header-nav .col-6 {
@@ -269,6 +284,7 @@ footer {
   padding: 1rem;
   font-size: 3rem;
   color: #553c8b;
+  margin-bottom: 20px;
 }
 
 .grid-container {
@@ -317,6 +333,10 @@ footer {
   width: 100px;
   height: auto;
   margin-top: 2rem;
+}
+
+#PostgreSQL {
+  height: 80px;
 }
 
 .skills {
@@ -396,6 +416,11 @@ footer {
 #projectsGrid > div {
   background-color: #ffeafe;
   border-radius: 10px;
-  width: 400px;
-  height: 250px;
+  width: 500px;
+  height: 350px;
+}
+
+#kochbuch {
+  background-image: url(../img/Kochbuch.png);
+  background-size: contain;
 }
