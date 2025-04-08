@@ -11,6 +11,7 @@ body {
 
 * {
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* ===GENERELL=== */
@@ -143,9 +144,38 @@ footer {
   background-color: #ffeafe;
   border-radius: 4%;
   margin-right: 2rem;
-
   margin-top: 10rem;
+  display: flex;
+  justify-content: space-evenly;
+  opacity: 0.9;
 }
+
+#img-container #left {
+  width: 50%;
+  margin-left: 20px;
+}
+
+#img-container #left p {
+  font-size: 25px;
+  line-height: 1.3;
+}
+
+#img-container #right a {
+  text-decoration: none;
+}
+
+#img-container #right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#img-container #right img {
+  margin-bottom: 20px;
+}
+
 @media (max-width: 1133px) {
   .svgContainer {
     display: none;
