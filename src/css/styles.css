@@ -111,6 +111,12 @@ footer {
   }
 }
 
+@media (max-width: 860px) {
+  #header-nav h1 {
+    display: none;
+  }
+}
+
 /* ===ABOUT-ME=== */
 #about-me-section {
   background-color: #553c8b;
@@ -175,46 +181,6 @@ footer {
 #img-container #right img {
   margin-bottom: 20px;
   filter: drop-shadow(3px 3px 3px #553c8b);
-}
-
-@media (max-width: 1133px) {
-  .svgContainer {
-    display: none;
-  }
-
-  #lightSwitch {
-    display: none;
-  }
-
-  #img-container {
-    margin: 0;
-  }
-
-  #about-me-section {
-    align-items: center;
-    justify-content: center;
-  }
-}
-
-@media (max-width: 720px) {
-  #img-container {
-    width: 550px;
-    height: 330px;
-  }
-}
-
-@media (max-width: 590px) {
-  #img-container {
-    width: 500px;
-    height: 300px;
-  }
-}
-
-@media (max-width: 530px) {
-  #img-container {
-    width: 260px;
-    height: 450px;
-  }
 }
 
 /* @media (max-width: 1403px) {
@@ -304,6 +270,70 @@ footer {
   fill: #553c8b;
 }
 
+@media (max-width: 1133px) {
+  .svgContainer {
+    display: none;
+  }
+
+  #lightSwitch {
+    display: none;
+  }
+
+  #img-container {
+    margin: 0;
+  }
+
+  #about-me-section {
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 720px) {
+  #img-container {
+    width: 550px;
+    height: 370px;
+  }
+  #img-container #left p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 590px) {
+  #img-container {
+    width: 500px;
+    height: 370px;
+  }
+  #img-container #right img {
+    height: 200px;
+    width: auto;
+  }
+}
+
+@media (max-width: 530px) {
+  #img-container {
+    width: 450px;
+    height: 450px;
+  }
+  #img-container #right img {
+    height: 200px;
+    width: auto;
+  }
+}
+
+@media (max-width: 530px) {
+  #img-container {
+    width: 420px;
+    height: 450px;
+  }
+  #img-container #right {
+    display: none;
+  }
+  #img-container #left p {
+    font-size: 22px;
+  }
+}
+
 /* ===SKILLS-SECTION===*/
 
 #skills-section {
@@ -351,12 +381,6 @@ footer {
 
   #skills-section {
     height: 200vh;
-  }
-}
-
-@media (max-width: 400px) {
-  .grid-container {
-    grid-template-columns: auto;
   }
 }
 
@@ -434,6 +458,21 @@ footer {
   font-size: 35px;
 }
 
+@media (max-width: 402px) {
+  .grid-container {
+    grid-template-columns: auto auto;
+  }
+  .skills {
+    width: 100px;
+    height: 150px;
+  }
+
+  .skills img {
+    width: 50px;
+    height: auto;
+  }
+}
+
 /* ===Projects Section=== */
 
 #project-Section {
@@ -455,15 +494,6 @@ footer {
   padding-top: 3rem;
   gap: 3rem;
 }
-@media (max-width: 860px) {
-  #projectsGrid {
-    grid-template-columns: auto;
-    grid-template-rows: auto auto;
-  }
-  #projectsGrid > div:not(:nth-child(-n + 2)) {
-    display: none;
-  }
-}
 
 #projectsGrid div {
   background-color: #ffeafe;
@@ -484,4 +514,87 @@ footer {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+}
+
+@media (max-width: 1260px) {
+  #projectsGrid {
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+  }
+
+  #projectsGrid div {
+    width: 500px;
+    height: 350px;
+  }
+}
+
+@media (max-width: 1064px) {
+  #projectsGrid {
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+  }
+
+  #projectsGrid div {
+    width: 400px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 870px) {
+  #projectsGrid {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+  }
+
+  #projectsGrid div {
+    width: 350px;
+    height: 250px;
+  }
+}
+
+@media (max-width: 370px) {
+  #projectsGrid div {
+    width: 300px;
+    height: 220px;
+  }
+  #img-container #left p {
+    font-size: 20px;
+  }
+}
+
+/* ===Project sites=== */
+
+#main {
+  background-color: #553c8b;
+  display: flex;
+}
+
+#main div {
+  width: 50%;
+  margin: 20px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+#main div img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.main_left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-50px);
+}
+
+.main_right {
+}
+
+.main_right h1 {
+  text-align: center;
+  color: #ccc1ff;
+  font-size: 2.3rem;
+  margin-top: 20px;
 }
