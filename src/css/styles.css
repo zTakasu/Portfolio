@@ -654,3 +654,47 @@ footer {
     align-items: center;
   }
 }
+
+@media (max-width: 464px) {
+  #main {
+    height: 130vh;
+  }
+}
+
+@media (max-width: 431px) {
+  #main {
+    height: 140vh;
+    font-size: 20px;
+  }
+  #main p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  #main {
+    height: 150vh;
+  }
+}
+
+@media (max-width: 383px) {
+  #main {
+    height: 160vh;
+  }
+}
+
+@media (max-width: 356px) {
+  #main {
+    height: 170vh;
+  }
+
+  footer {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 325px) {
+  #main {
+    height: 190vh;
+  }
+}
