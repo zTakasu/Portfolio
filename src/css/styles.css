@@ -326,6 +326,8 @@ footer {
   #img-container {
     width: 420px;
     height: 450px;
+    padding-top: 20px;
+    transform: translateY(-50px);
   }
   #img-container #right {
     display: none;
@@ -381,7 +383,7 @@ footer {
   }
 
   #skills-section {
-    height: 200vh;
+    height: 205vh;
   }
 }
 
@@ -471,6 +473,18 @@ footer {
   .skills img {
     width: 50px;
     height: auto;
+  }
+
+  .front p {
+    font-size: 16px;
+  }
+
+  .back p {
+    font-size: 24px;
+  }
+
+  .back h1 {
+    font-size: 14px;
   }
 }
 
